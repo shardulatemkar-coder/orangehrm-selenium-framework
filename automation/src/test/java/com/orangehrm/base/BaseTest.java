@@ -17,11 +17,11 @@ public class BaseTest {
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 	}
 	
-//	@AfterClass
-//	public void tearDown() {
-//		if (driver != null) {
-//			driver.quit();
-//		}
-//	}
+	@AfterClass
+	public void tearDown() {
+		if (driver != null) {
+			driver.quit();
+		}
+	}
 
 }
