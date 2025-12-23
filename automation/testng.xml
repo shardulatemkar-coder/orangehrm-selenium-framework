@@ -2,8 +2,8 @@
 <suite name="OrangeHRM Suite">
 
     <listeners>
-        <listener class-name="com.orangehrm.utils.ExtentListeners" />
-    </listeners>
+    <listener class-name="com.orangehrm.utils.ExtentListeners"/>
+</listeners>
 
     <test name="Login Tests">
         <classes>
@@ -11,4 +11,9 @@
         </classes>
     </test>
 
+	<test name ="Dashboard Test">
+	<classes>
+	<class name ="com.orangehrm.tests.DashboardTest"/>
+	 </classes>
+	</test>
 </suite>

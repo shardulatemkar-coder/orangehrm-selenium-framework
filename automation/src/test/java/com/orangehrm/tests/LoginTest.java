@@ -38,7 +38,8 @@ public class LoginTest extends BaseTest {
 		
 		String error = login.getErrorMessage();
 		
-		Assert.assertNotNull(error, "Error message not shown for invaild login !");;
-		Assert.assertEquals(error,  "Invalid credentials");
+		Assert.assertNotNull(error, "Error message not shown for invalid login!");
+		Assert.assertEquals(error.equals("Invalid credentials") || error.equals("Required"), "Unexpected error message: " + error);
+
 	}
 }

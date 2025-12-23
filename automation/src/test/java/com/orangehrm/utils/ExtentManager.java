@@ -1,8 +1,5 @@
 package com.orangehrm.utils;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
@@ -11,7 +8,12 @@ public class ExtentManager {
 	
 	public static ExtentReports getReporter() {
 		if (extent == null) {
+			ExtentSparkReporter reporter = new ExtentSparkReporter("test-output/ExtentReport.html");
+			reporter.config().setReportName("Automation Report");
+			reporter.config().setDocumentTitle("OrangeHRM Test Report");
 			
+			extent = new ExtentReports();
+			extent.attachReporter(reporter);
 		}
 		return extent;
 	}
