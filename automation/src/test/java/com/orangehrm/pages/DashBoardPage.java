@@ -11,8 +11,6 @@ import com.orangehrm.base.BasePage;
 
 public class DashBoardPage extends BasePage {
 
-    private WebDriver driver;
-
     private By dashboardHeader = By.xpath("//h6[text()='Dashboard']");
     private By quickLaunchPanel = By.xpath("//p[normalize-space()='Quick Launch'][1]"); // FIXED LOCATOR
 

@@ -24,10 +24,4 @@ public class WaitUtils {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		return wait.until(ExpectedConditions.elementToBeClickable(locator));
 	}
-	
-	public static void waitForSeconds(int sec) {
-		try {
-			Thread.sleep(sec * 1000);
-		} catch (InterruptedException e) {}
-	}
 }

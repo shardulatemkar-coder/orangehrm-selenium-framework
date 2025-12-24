@@ -1,6 +1,6 @@
 package com.orangehrm.tests;
-import org.testng.annotations.DataProvider;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.orangehrm.base.BaseTest;
@@ -33,13 +33,19 @@ public class LoginTest extends BaseTest {
 	
 	@Test(dataProvider = "invalidLoginData")
 	public void invalidLoginTest(String username, String password) {
+		
+		log.info("Running invalid login test with: " + username + " / " + password);
+
+		
 		LoginPage login = new LoginPage(driver);
 		login.login(username, password);
 		
 		String error = login.getErrorMessage();
 		
 		Assert.assertNotNull(error, "Error message not shown for invalid login!");
-		Assert.assertEquals(error.equals("Invalid credentials") || error.equals("Required"), "Unexpected error message: " + error);
+		Assert.assertTrue(error.equals("Invalid credentials") || error.equals("Required"),
+				"Unexpected error message: " + error);
+		
 
 	}
 }

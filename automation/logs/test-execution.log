@@ -1,0 +1,18 @@
+2025-12-24 22:15:07 INFO  [LoginTest] Browser launched and navigated to OrangeHRM login page
+2025-12-24 22:15:07 INFO  [LoginTest] Running invalid login test with: wrongUser / admin123
+2025-12-24 22:15:10 INFO  [LoginTest] Running invalid login test with: Admin / wrongPass
+2025-12-24 22:15:12 INFO  [LoginTest] Running invalid login test with: wrongUser / wrongPass
+2025-12-24 22:15:13 INFO  [LoginTest] Running invalid login test with:  / admin
+2025-12-24 22:15:14 INFO  [LoginTest] Running invalid login test with: Admin / 
+2025-12-24 22:15:17 INFO  [LoginTest] Closing browser adn quitting driver
+2025-12-24 22:15:23 INFO  [DashboardTest] Browser launched and navigated to OrangeHRM login page
+2025-12-24 22:15:26 INFO  [DashboardTest] Closing browser adn quitting driver
+2025-12-24 22:49:26 INFO  [LoginTest] Browser launched and navigated to OrangeHRM login page
+2025-12-24 22:49:26 INFO  [LoginTest] Running invalid login test with: wrongUser / admin123
+2025-12-24 22:49:28 INFO  [LoginTest] Running invalid login test with: Admin / wrongPass
+2025-12-24 22:49:30 INFO  [LoginTest] Running invalid login test with: wrongUser / wrongPass
+2025-12-24 22:49:32 INFO  [LoginTest] Running invalid login test with:  / admin
+2025-12-24 22:49:32 INFO  [LoginTest] Running invalid login test with: Admin / 
+2025-12-24 22:49:35 INFO  [LoginTest] Closing browser adn quitting driver
+2025-12-24 22:49:41 INFO  [DashboardTest] Browser launched and navigated to OrangeHRM login page
+2025-12-24 22:49:44 INFO  [DashboardTest] Closing browser adn quitting driver
