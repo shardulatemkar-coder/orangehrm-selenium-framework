@@ -1,15 +1,20 @@
 package com.orangehrm.tests;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.orangehrm.base.BaseTest;
 import com.orangehrm.pages.LoginPage;
+import com.orangehrm.utils.LoggerLoad;
 
 
 
 public class LoginTest extends BaseTest {
-
+	
+	
+	
 	@DataProvider(name = "invalidLoginData")
 	public Object[][] invalidLoginData(){
 		return new Object[][] {
@@ -22,12 +27,21 @@ public class LoginTest extends BaseTest {
 	}
 	@Test
 	public void validLoginTest() {
-		LoginPage login = new LoginPage(driver); //-->Type casting is done to provide more methods of login page into driver
-		login.login("Admin", "admin123");
-		
-	
-		System.out.println("Current URL : " + driver.getCurrentUrl());
-		System.out.println("Page Title : " + driver.getTitle());
+		  log.info("Starting valid login test");
+		  
+		  LoginPage login = new LoginPage(driver);
+		  
+		  login.enterUsername("Admin");
+		  log.info("Entered username");
+		  
+		  login.enterPassword("admin123");
+		  log.info("Entered password");
+		  
+		  login.clickLogin();
+		  log.info("Clicked Login button");
+		  
+		  Assert.assertTrue(login.isDashboardVisible(), "DashBoard is not visible !");
+		  log.info("Valid login test passed");
 				
 	}
 	
