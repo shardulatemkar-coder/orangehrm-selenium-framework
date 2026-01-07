@@ -10,19 +10,23 @@ import com.orangehrm.pages.EmployeeListPage;
 import com.orangehrm.pages.LoginPage;
 import com.orangehrm.pages.MenuPage;
 
+
 public class EmployeeListTest extends BaseTest {
 
 	
+	LoginPage login;
+	MenuPage menu;
+	EmployeeListPage empList;
 	DashBoardPage dashboard;
 	
 	
 	
 	@BeforeClass
 	public void setupPages() {
-		
-		dashboard = new DashBoardPage(driver);
-		
-		
+		login = new LoginPage(driver);
+        menu = new MenuPage(driver);
+        empList = new EmployeeListPage(driver);
+        dashboard = new DashBoardPage(driver);
 	}
 	
 	@Test
@@ -30,27 +34,32 @@ public class EmployeeListTest extends BaseTest {
 		
 		
 		log.info("Starting Delete Employee Test");
-		LoginPage login = new LoginPage(driver);
+		
 		login.login("Admin","admin123");
-		login.clickLogin();
+
 		
-		Assert.assertTrue(login.isDashboardVisible(), "Dashboard not visible after login ");
+		//Assert.assertTrue(login.isDashboardVisible(), "Dashboard not visible after login ");
 		
-		MenuPage menu = new MenuPage(driver);
+
 		menu.clickPIM();
 		menu.clickEmployeeList();
+		Assert.assertTrue(empList.isEmployeeListHeaderVisible(), "Employee List Header not visible");
 		
-		EmployeeListPage empList  = new EmployeeListPage(driver);
 		
-		String employeeName = "Sam Wick";
+		String employeeName = "hh hh";
 		
 		empList.searchEmployee(employeeName);
-		Assert.assertTrue(empList.isEmployeeFound(employeeName), "Employee not found in list ");
+		 Assert.assertTrue(empList.isEmployeeFound(employeeName),
+	     "Employee '" + employeeName + "' was not found in search results.");
+
 		
 		empList.deleteEmpoyee(employeeName);
-		
 		Assert.assertTrue(empList.isDeleteSuccess(), "Delete success toast not visible ");
 		
+		empList.searchEmployee(employeeName);
+		Assert.assertTrue(empList.isEmployeeFound(employeeName),
+                "Employee still appears in list after delete operation.");
+
 		log.info("--Employee List Tets Completed--");
 	}
 	

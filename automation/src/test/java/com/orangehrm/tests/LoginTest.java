@@ -43,6 +43,7 @@ public class LoginTest extends BaseTest {
 		
 		log.info("Running invalid login test with: " + username + " / " + password);
 
+		driver.navigate().refresh();
 		
 		LoginPage login = new LoginPage(driver);
 		login.login(username, password);

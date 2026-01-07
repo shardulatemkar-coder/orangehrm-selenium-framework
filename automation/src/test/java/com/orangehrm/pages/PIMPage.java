@@ -7,7 +7,7 @@ import com.orangehrm.base.BasePage;
 
 public class PIMPage extends BasePage{
 	private By pimMenu =  By.xpath("//span[text() ='PIM']");
-	private By addEmployee = By.xpath("//button[normalize-space()='Add']");
+	private By addEmployee = By.xpath("//a[normalize-space()='Add Employee']");
 	private By employeeList = By.xpath("//a[normalize-space()='Employee List']");
 	
 	public PIMPage(WebDriver driver) {

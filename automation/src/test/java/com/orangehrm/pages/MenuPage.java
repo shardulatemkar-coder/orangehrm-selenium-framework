@@ -16,7 +16,7 @@ public class MenuPage extends BasePage {
     
     // submenus
     private By employeeList = By.xpath("//a[normalize-space()='Employee List']");
-    private By addEmployee =By.xpath("//a[normalize-space()='Employee List']");
+    private By addEmployee =By.xpath("//a[normalize-space()='Add Employee']");
     
 	public MenuPage(WebDriver driver) {
 		super(driver);

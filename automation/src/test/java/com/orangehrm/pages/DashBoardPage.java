@@ -18,13 +18,7 @@ public class DashBoardPage extends BasePage {
     }
 
     public boolean isDashboardHeaderVisible() {
-    	try {
-    		wait.until(ExpectedConditions.visibilityOfElementLocated(dashboardHeader));
-    		return driver.findElement(dashboardHeader).isDisplayed();
-    	}catch (Exception e) {
-    		log.error("Dashboard headder not found : " + e.getMessage());
-    		return false;
-    	}
+    	return isVisible(dashboardHeader);
     }
 
     public void goToEmployeeList() {

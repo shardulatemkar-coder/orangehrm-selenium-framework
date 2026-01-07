@@ -126,3 +126,82 @@
 2026-01-04 21:15:45 INFO  [com.orangehrm.pages.AddEmployeePages] - Clicking Save button
 2026-01-04 21:15:45 INFO  [com.orangehrm.pages.AddEmployeePages] - Checking if Personal Details header is visible
 2026-01-04 21:15:51 INFO  [com.orangehrm.tests.AddEmployeeTest] - Add Employee Test passed Sucessfully 
+2026-01-07 14:32:54 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-07 14:32:58 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-07 14:32:58 INFO  [com.orangehrm.tests.DashboardTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-07 14:33:09 INFO  [com.orangehrm.tests.DashboardTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-07 14:33:09 INFO  [com.orangehrm.pages.LoginPage] - Performing login with user: Admin
+2026-01-07 16:30:20 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-07 16:30:23 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-07 16:30:23 INFO  [com.orangehrm.tests.EmployeeListTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-07 16:30:28 INFO  [com.orangehrm.tests.EmployeeListTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-07 16:30:28 INFO  [com.orangehrm.tests.EmployeeListTest] - Starting Delete Employee Test
+2026-01-07 16:30:28 INFO  [com.orangehrm.pages.LoginPage] - Performing login with user: Admin
+2026-01-07 16:30:52 INFO  [com.orangehrm.tests.EmployeeListTest] - Closing browser
+2026-01-07 16:30:52 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-07 16:32:52 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-07 16:32:54 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-07 16:32:54 INFO  [com.orangehrm.tests.EmployeeListTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-07 16:32:58 INFO  [com.orangehrm.tests.EmployeeListTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-07 16:32:59 INFO  [com.orangehrm.tests.EmployeeListTest] - Starting Delete Employee Test
+2026-01-07 16:32:59 INFO  [com.orangehrm.pages.LoginPage] - Performing login with user: Admin
+2026-01-07 16:33:12 INFO  [com.orangehrm.tests.EmployeeListTest] - Closing browser
+2026-01-07 16:33:12 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-07 18:42:27 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-07 18:42:31 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-07 18:42:31 INFO  [com.orangehrm.tests.AddEmployeeTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-07 18:42:36 INFO  [com.orangehrm.tests.AddEmployeeTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-07 18:42:36 INFO  [com.orangehrm.pages.LoginPage] - Performing login with user: Admin
+2026-01-07 18:43:00 INFO  [com.orangehrm.tests.AddEmployeeTest] - Closing browser
+2026-01-07 18:43:00 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-07 18:46:05 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-07 18:46:08 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-07 18:46:08 INFO  [com.orangehrm.tests.LoginTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-07 18:46:17 INFO  [com.orangehrm.tests.LoginTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-07 18:46:17 INFO  [com.orangehrm.tests.LoginTest] - Running invalid login test with: wrongUser / admin123
+2026-01-07 18:46:18 INFO  [com.orangehrm.pages.LoginPage] - Performing login with user: wrongUser
+2026-01-07 18:46:23 INFO  [com.orangehrm.tests.LoginTest] - Running invalid login test with: Admin / wrongPass
+2026-01-07 18:46:24 INFO  [com.orangehrm.pages.LoginPage] - Performing login with user: Admin
+2026-01-07 18:46:29 INFO  [com.orangehrm.tests.LoginTest] - Running invalid login test with: wrongUser / wrongPass
+2026-01-07 18:46:30 INFO  [com.orangehrm.pages.LoginPage] - Performing login with user: wrongUser
+2026-01-07 18:46:33 INFO  [com.orangehrm.tests.LoginTest] - Running invalid login test with:  / admin
+2026-01-07 18:46:34 INFO  [com.orangehrm.pages.LoginPage] - Performing login with user: 
+2026-01-07 18:46:56 INFO  [com.orangehrm.tests.LoginTest] - Running invalid login test with: Admin / 
+2026-01-07 18:46:57 INFO  [com.orangehrm.pages.LoginPage] - Performing login with user: Admin
+2026-01-07 18:47:19 INFO  [com.orangehrm.tests.LoginTest] - Starting valid login test
+2026-01-07 18:47:19 INFO  [com.orangehrm.pages.LoginPage] - Performing login with user: Admin
+2026-01-07 18:47:20 INFO  [com.orangehrm.tests.LoginTest] - Logged in successfully
+2026-01-07 18:47:41 INFO  [com.orangehrm.tests.LoginTest] - Closing browser
+2026-01-07 18:47:41 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-07 18:55:17 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-07 18:55:21 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-07 18:55:21 INFO  [com.orangehrm.tests.LoginTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-07 18:55:26 INFO  [com.orangehrm.tests.LoginTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-07 18:55:26 INFO  [com.orangehrm.tests.LoginTest] - Starting valid login test
+2026-01-07 18:55:26 INFO  [com.orangehrm.pages.LoginPage] - Performing login with user: Admin
+2026-01-07 18:55:30 INFO  [com.orangehrm.tests.LoginTest] - Logged in successfully
+2026-01-07 18:55:30 INFO  [com.orangehrm.tests.LoginTest] - Valid login test passed
+2026-01-07 18:55:31 INFO  [com.orangehrm.tests.LoginTest] - Closing browser
+2026-01-07 18:55:31 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-07 18:55:57 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-07 18:55:59 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-07 18:55:59 INFO  [com.orangehrm.tests.AddEmployeeTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-07 18:56:05 INFO  [com.orangehrm.tests.AddEmployeeTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-07 18:56:05 INFO  [com.orangehrm.pages.LoginPage] - Performing login with user: Admin
+2026-01-07 18:56:21 INFO  [com.orangehrm.pages.AddEmployeePages] - Adding new employee: Sam Wick
+2026-01-07 18:56:21 INFO  [com.orangehrm.pages.AddEmployeePages] - Entering first name: Sam
+2026-01-07 18:56:22 INFO  [com.orangehrm.pages.AddEmployeePages] - Entering middle name: S
+2026-01-07 18:56:22 INFO  [com.orangehrm.pages.AddEmployeePages] - Entering last name: Wick
+2026-01-07 18:56:22 INFO  [com.orangehrm.pages.AddEmployeePages] - Entering employee ID : 007
+2026-01-07 18:56:22 INFO  [com.orangehrm.pages.AddEmployeePages] - Clicking Save button
+2026-01-07 18:56:23 INFO  [com.orangehrm.pages.AddEmployeePages] - Checking if Personal Details header is visible
+2026-01-07 18:56:29 INFO  [com.orangehrm.tests.AddEmployeeTest] - Add Employee Test passed Sucessfully 
+2026-01-07 18:56:29 INFO  [com.orangehrm.tests.AddEmployeeTest] - Closing browser
+2026-01-07 18:56:29 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-07 19:00:48 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-07 19:00:51 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-07 19:00:51 INFO  [com.orangehrm.tests.DashboardTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-07 19:00:58 INFO  [com.orangehrm.tests.DashboardTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-07 19:00:58 INFO  [com.orangehrm.pages.LoginPage] - Performing login with user: Admin
+2026-01-07 19:01:02 INFO  [com.orangehrm.tests.DashboardTest] - Closing browser
+2026-01-07 19:01:02 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser

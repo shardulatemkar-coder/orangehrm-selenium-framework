@@ -28,6 +28,7 @@ public class EmployeeListPage extends BasePage {
 		waitForVisibility(employeeNameField).clear();
 		type(employeeNameField, employeeName);
 		click(searchBtn);
+	
 	}
 	
 	public boolean isEmployeeFound(String employeeName) {

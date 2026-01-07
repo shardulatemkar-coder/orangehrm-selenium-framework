@@ -7,6 +7,7 @@ import com.orangehrm.base.BaseTest;
 import com.orangehrm.pages.AddEmployeePages;
 import com.orangehrm.pages.DashBoardPage;
 import com.orangehrm.pages.LoginPage;
+import com.orangehrm.pages.MenuPage;
 
 public class AddEmployeeTest extends BaseTest {
 	
@@ -19,8 +20,10 @@ public class AddEmployeeTest extends BaseTest {
 		Assert.assertTrue(dashboard.isDashboardHeaderVisible(),
 				"Dashboard is not visible after login ");
 		
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/pim/addEmployee");
-		
+		 MenuPage menu = new MenuPage(driver);
+	        menu.clickPIM();
+	        menu.clickAddEmployee();
+	        
 		AddEmployeePages addEmp = new AddEmployeePages(driver);
 		
 		addEmp.addEmployee("Sam", "S", "Wick", "007");

@@ -28,17 +28,18 @@ public class LoginPage extends BasePage {
     }
 	
 	public void enterUsername(String user) {
-		type((username), user);
+		log.info("Entering userneame : "+ username);
+		type(username, user);
 	}
 	
 	public void enterPassword(String pass) {
-		log.info("Entering passord");
-		driver.findElement(password).sendKeys(pass);
+		 log.info("Entering password");
+		type(password, pass);
 	}
 	
 	public void clickLogin() {
 		log.info("Clicking login button");
-		driver.findElement(loginBtn).click();
+		click(loginBtn);
 	}
 	
 	public String getErrorMessage() {
@@ -55,35 +56,25 @@ public class LoginPage extends BasePage {
 		 }catch (Exception e) {
 			 return null;
 		 }
-//		try {
-//			WebElement invalid = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[contains(@class,'oxd-alert-content-text')]")));
-//	        return invalid.getText();
-//					
-//		}catch (Exception e) {
-//			
-//		}
-//		
-//		try {
-//			WebElement required = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(@class,'oxd-input-field-error-message')]")));
-//			return required.getText().trim();
-//		}catch (Exception e) {
-//			return null;
-//		}
+
 }
 	
 	public boolean isDashboardVisible() {
-		try {
-	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	        wait.until(ExpectedConditions.visibilityOfElementLocated(profileHeader));
-	        return driver.findElement(profileHeader).isDisplayed();
-	    } catch (Exception e) {
-	        return false;
-	    }
+		return isVisible(profileHeader);
+		//		try {
+//	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//	        wait.until(ExpectedConditions.visibilityOfElementLocated(profileHeader));
+//	        return driver.findElement(profileHeader).isDisplayed();
+//	    } catch (Exception e) {
+//	        return false;
+//	    }
 	}
 	
 	 public void login(String user, String pass) {
-	        waitForVisibility(username).sendKeys(user);
-	        waitForVisibility(password).sendKeys(pass);
-	        waitForClickability(loginBtn).click();
+	        log.info("Performing login with user: " + user);
+	        type(username, user);
+	        type(password, pass);
+	        click(loginBtn);
+
 	    }
 }
