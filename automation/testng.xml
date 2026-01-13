@@ -1,28 +1,31 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="OrangeHRM Automation Suite" parallel ="false">
-<listeners>
-     <listener class-name="com.orangehrm.listeners.RetryTransformer"/>
-    <listener class-name="com.orangehrm.listeners.TestListeners"/>
-</listeners>
+<suite name="OrangeHRM Automation Suite" parallel="false">
+
+  <listeners>
+    <listener class-name="com.orangehrm.listeners.RetryTransformer"/>
+    <listener class-name="com.orangehrm.listeners.TestListener"/>
+  </listeners>
+
   <test name="Smoke Tests">
-	  <groups>
-		  <run>
-		  		<include name="smoke"></include>
-		  </run>
-	  </groups>
-	  <classes>
-	  <class name="com.orangehrm.tests"/>
-	  </classes>
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <packages>
+      <package name="com.orangehrm.tests"/>
+    </packages>
   </test>
-  
+
   <test name="Regression Tests">
-        <groups>
-            <run>
-                <include name="regression"/>
-            </run>
-        </groups>
-        <classes>
-            <class name="com.orangehrm.tests"/>
-        </classes>
-    </test>
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <packages>
+      <package name="com.orangehrm.tests"/>
+    </packages>
+  </test>
+
 </suite>

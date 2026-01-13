@@ -18,7 +18,7 @@ public class BaseTest {
 	protected Logger log = LogManager.getLogger(this.getClass());
 
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setup() {
 
 		driver = DriverFactory.initDriver();
@@ -31,7 +31,7 @@ public class BaseTest {
 		log.info("Browser launched and navigated to OrangeHRM login page");
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		log.info("Closing browser");
 		DriverFactory.quitDriver();

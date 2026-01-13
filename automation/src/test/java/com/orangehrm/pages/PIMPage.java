@@ -11,7 +11,7 @@ public class PIMPage extends BasePage{
 	private By employeeList = By.xpath("//a[normalize-space()='Employee List']");
 	
 	public PIMPage(WebDriver driver) {
-		super(driver);
+		super();
 	}
 	
 	public void clickPIMMenu() {

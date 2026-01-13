@@ -1,59 +1,59 @@
-
-package com.orangehrm.utils;
-
-import java.time.Duration;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import com.orangehrm.factory.DriverFactory;
-
-public class WaitUtils {
-
-	private WebDriver driver;
-	private WebDriverWait wait;
 	
-	public WaitUtils(WebDriver driver) {
-		this.driver= driver;
-		this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-	}
+	package com.orangehrm.utils;
 	
-	public WebElement waitForVisibility(WebElement element) {
-		return wait.until(ExpectedConditions.visibilityOf(element));
-	}
+	import java.time.Duration;
 	
-	public WebElement waitForVisibility(By locator) {
-		return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-	}
+	import org.openqa.selenium.By;
+	import org.openqa.selenium.WebDriver;
+	import org.openqa.selenium.WebElement;
+	import org.openqa.selenium.support.ui.ExpectedConditions;
+	import org.openqa.selenium.support.ui.FluentWait;
+	import org.openqa.selenium.support.ui.WebDriverWait;
 	
-	public WebElement waitForClickable(WebElement element) {
-		return wait.until(ExpectedConditions.elementToBeClickable(element));
-	}
-	public WebElement waitForClickable(By locator) {
-		return wait.until(ExpectedConditions.elementToBeClickable(locator));
-	}
+	import com.orangehrm.factory.DriverFactory;
 	
+	public class WaitUtils {
 	
-	
-	public WebElement waitForPresence(By locator) {
-		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-	}
-	
-	public void waitForTitle(String title) {
-		wait.until(ExpectedConditions.titleContains(title));
-	}
-	
-	public WebElement flueintWait(By locator) {
-		FluentWait<WebDriver> fluent = new FluentWait<>(driver)
-		.withTimeout(Duration.ofSeconds(20))
-		.pollingEvery(Duration.ofSeconds(1))
-		.ignoring(Exception.class);
+		private WebDriver driver;
+		private WebDriverWait wait;
 		
-		return fluent.until(dr -> dr.findElement(locator));
+		public WaitUtils(WebDriver driver) {
+			this.driver= driver;
+			this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		}
+		
+		public WebElement waitForVisibility(WebElement element) {
+			return wait.until(ExpectedConditions.visibilityOf(element));
+		}
+		
+		public WebElement waitForVisibility(By locator) {
+			return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		}
+		
+		public WebElement waitForClickable(WebElement element) {
+			return wait.until(ExpectedConditions.elementToBeClickable(element));
+		}
+		public WebElement waitForClickable(By locator) {
+			return wait.until(ExpectedConditions.elementToBeClickable(locator));
+		}
+		
+		
+		
+		public WebElement waitForPresence(By locator) {
+			return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+		}
+		
+		public void waitForTitle(String title) {
+			wait.until(ExpectedConditions.titleContains(title));
+		}
+		
+		public WebElement flueintWait(By locator) {
+			FluentWait<WebDriver> fluent = new FluentWait<>(driver)
+			.withTimeout(Duration.ofSeconds(20))
+			.pollingEvery(Duration.ofSeconds(1))
+			.ignoring(Exception.class);
+			
+			return fluent.until(dr -> dr.findElement(locator));
+		}
+	
 	}
-
-}

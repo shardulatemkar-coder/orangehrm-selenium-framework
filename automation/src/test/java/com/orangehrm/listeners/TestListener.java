@@ -31,7 +31,9 @@ public class TestListener implements ITestListener {
 
         // Screenshot
         String screenshotPath = ScreenshotUtils.takeScreenShot(driver, result.getMethod().getMethodName());
+      if (screenshotPath != null) {
         ExtentTestManager.getTest().addScreenCaptureFromPath(screenshotPath);
+    }
     }
 
     @Override

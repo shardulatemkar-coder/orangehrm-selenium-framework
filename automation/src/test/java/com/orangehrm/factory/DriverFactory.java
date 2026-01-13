@@ -14,9 +14,9 @@ import com.orangehrm.utils.ConfigReader;
 
 public class DriverFactory {
 
-	private static WebDriver driver;
-	private static final Logger log = LogManager.getLogger(DriverFactory.class);
-	
+    private static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
+    private static final Logger log = LogManager.getLogger(DriverFactory.class);
+
     public static WebDriver initDriver() {
 
         String browser = ConfigReader.get("browser");
@@ -24,17 +24,17 @@ public class DriverFactory {
 
         log.info("Initializing browser: " + browser);
 
+        WebDriver driver;
+
         switch (browser.toLowerCase()) {
 
             case "chrome":
-            	ChromeOptions options = new ChromeOptions();
-            	
-            	String headless = ConfigReader.get("headless");
-            	if(headless != null && headless.equalsIgnoreCase("true")) {
-            		log.info("Running Chrome in HEADLESS mode");
+                ChromeOptions options = new ChromeOptions();
+                if ("true".equalsIgnoreCase(ConfigReader.get("headless"))) {
+                    log.info("Running Chrome in HEADLESS mode");
                     options.addArguments("--headless=new");
                     options.addArguments("--window-size=1920,1080");
-            	}
+                }
                 driver = new ChromeDriver(options);
                 break;
 
@@ -47,30 +47,27 @@ public class DriverFactory {
                 break;
 
             default:
-                throw new RuntimeException(
-                    "❌ Invalid browser name in config.properties → " + browser +
-                    " | Allowed: chrome, edge, firefox"
-                );
+                throw new RuntimeException("Invalid browser: " + browser);
         }
 
         driver.manage().window().maximize();
-        driver.manage()
-              .timeouts()
-              .implicitlyWait(Duration.ofSeconds(implicitWait));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWait));
 
+        tlDriver.set(driver);
         log.info("Browser launched successfully");
+
         return driver;
     }
 
     public static WebDriver getDriver() {
-        return driver;
+        return tlDriver.get();
     }
 
     public static void quitDriver() {
-        if (driver != null) {
+        if (tlDriver.get() != null) {
             log.info("Closing browser");
-            driver.quit();
-            driver = null;
+            tlDriver.get().quit();
+            tlDriver.remove();
         }
     }
 }

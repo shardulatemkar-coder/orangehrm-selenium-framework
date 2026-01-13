@@ -29,7 +29,7 @@ public class LoginTest extends BaseTest {
 		}
 		return testData;
 	}
-	@Test(groups = {"smoke","regression"})
+	@Test(groups = {"smoke"})
 	public void validLoginTest() {
 		  log.info("Starting valid login test");
 		  

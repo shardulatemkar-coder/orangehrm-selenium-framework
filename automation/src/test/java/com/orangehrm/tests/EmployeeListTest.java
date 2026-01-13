@@ -46,7 +46,7 @@ public class EmployeeListTest extends BaseTest {
 		Assert.assertTrue(empList.isEmployeeListHeaderVisible(), "Employee List Header not visible");
 		
 		
-		String employeeName = "hh hh";
+		String employeeName = "Sam Wick";
 		
 		empList.searchEmployee(employeeName);
 		 Assert.assertTrue(empList.isEmployeeFound(employeeName),

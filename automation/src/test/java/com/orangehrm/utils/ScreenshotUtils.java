@@ -13,6 +13,11 @@ import org.openqa.selenium.WebDriver;
 public class ScreenshotUtils {
 	
 	public static String takeScreenShot(WebDriver driver, String testName) { // --> the parameters here explain that we need to pass the driver and the name of the screenshot
+		
+		if(driver== null) {
+			return null;
+		}
+		
 		try {
 	
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

@@ -290,3 +290,174 @@
 2026-01-08 14:25:45 INFO  [com.orangehrm.tests.DashboardTest] - Browser launched and navigated to OrangeHRM login page
 2026-01-08 14:25:53 INFO  [com.orangehrm.tests.DashboardTest] - Closing browser
 2026-01-08 14:25:53 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-12 21:19:19 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-12 21:19:19 INFO  [com.orangehrm.factory.DriverFactory] - Running Chrome in HEADLESS mode
+2026-01-12 21:19:23 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-12 21:19:23 INFO  [com.orangehrm.tests.AddEmployeeTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-12 21:19:32 INFO  [com.orangehrm.tests.AddEmployeeTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-12 21:19:57 INFO  [com.orangehrm.tests.AddEmployeeTest] - Closing browser
+2026-01-12 21:19:57 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-12 21:19:57 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-12 21:19:57 INFO  [com.orangehrm.factory.DriverFactory] - Running Chrome in HEADLESS mode
+2026-01-12 21:19:59 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-12 21:19:59 INFO  [com.orangehrm.tests.DashboardTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-12 21:20:07 INFO  [com.orangehrm.tests.DashboardTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-12 21:20:16 INFO  [com.orangehrm.tests.DashboardTest] - Closing browser
+2026-01-12 21:20:16 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-12 21:20:16 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-12 21:20:16 INFO  [com.orangehrm.factory.DriverFactory] - Running Chrome in HEADLESS mode
+2026-01-12 21:20:17 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-12 21:20:17 INFO  [com.orangehrm.tests.EmployeeListTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-12 21:20:24 INFO  [com.orangehrm.tests.EmployeeListTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-12 21:20:24 INFO  [com.orangehrm.tests.EmployeeListTest] - Starting Delete Employee Test
+2026-01-12 21:20:24 INFO  [com.orangehrm.tests.EmployeeListTest] - Closing browser
+2026-01-12 21:20:24 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-12 23:09:29 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-12 23:09:29 INFO  [com.orangehrm.factory.DriverFactory] - Running Chrome in HEADLESS mode
+2026-01-12 23:09:32 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-12 23:09:32 INFO  [com.orangehrm.tests.AddEmployeeTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-12 23:09:39 INFO  [com.orangehrm.tests.AddEmployeeTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-12 23:10:03 INFO  [com.orangehrm.tests.AddEmployeeTest] - Closing browser
+2026-01-12 23:10:03 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-12 23:10:03 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-12 23:10:03 INFO  [com.orangehrm.factory.DriverFactory] - Running Chrome in HEADLESS mode
+2026-01-12 23:10:04 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-12 23:10:04 INFO  [com.orangehrm.tests.DashboardTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-12 23:10:14 INFO  [com.orangehrm.tests.DashboardTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-12 23:10:18 INFO  [com.orangehrm.tests.DashboardTest] - Closing browser
+2026-01-12 23:10:18 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-12 23:10:18 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-12 23:10:18 INFO  [com.orangehrm.factory.DriverFactory] - Running Chrome in HEADLESS mode
+2026-01-12 23:10:20 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-12 23:10:20 INFO  [com.orangehrm.tests.EmployeeListTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-12 23:10:26 INFO  [com.orangehrm.tests.EmployeeListTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-12 23:10:26 INFO  [com.orangehrm.tests.EmployeeListTest] - Starting Delete Employee Test
+2026-01-12 23:10:26 INFO  [com.orangehrm.tests.EmployeeListTest] - Closing browser
+2026-01-12 23:10:26 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-12 23:10:26 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-12 23:10:26 INFO  [com.orangehrm.factory.DriverFactory] - Running Chrome in HEADLESS mode
+2026-01-12 23:10:28 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-12 23:10:28 INFO  [com.orangehrm.tests.LoginTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-12 23:10:32 INFO  [com.orangehrm.tests.LoginTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-12 23:10:32 INFO  [com.orangehrm.tests.LoginTest] - Starting valid login test
+2026-01-12 23:10:33 INFO  [com.orangehrm.tests.LoginTest] - Logged in successfully
+2026-01-12 23:10:35 INFO  [com.orangehrm.tests.LoginTest] - Valid login test passed
+2026-01-12 23:10:35 INFO  [com.orangehrm.tests.LoginTest] - Closing browser
+2026-01-12 23:10:35 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-12 23:10:36 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-12 23:10:36 INFO  [com.orangehrm.factory.DriverFactory] - Running Chrome in HEADLESS mode
+2026-01-12 23:10:37 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-12 23:10:37 INFO  [com.orangehrm.tests.AddEmployeeTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-12 23:10:45 INFO  [com.orangehrm.tests.AddEmployeeTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-12 23:11:11 INFO  [com.orangehrm.tests.AddEmployeeTest] - Closing browser
+2026-01-12 23:11:11 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-12 23:11:11 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-12 23:11:11 INFO  [com.orangehrm.factory.DriverFactory] - Running Chrome in HEADLESS mode
+2026-01-12 23:11:12 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-12 23:11:12 INFO  [com.orangehrm.tests.DashboardTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-12 23:11:19 INFO  [com.orangehrm.tests.DashboardTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-12 23:11:23 INFO  [com.orangehrm.tests.DashboardTest] - Closing browser
+2026-01-12 23:11:23 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-12 23:11:24 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-12 23:11:24 INFO  [com.orangehrm.factory.DriverFactory] - Running Chrome in HEADLESS mode
+2026-01-12 23:11:25 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-12 23:11:25 INFO  [com.orangehrm.tests.EmployeeListTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-12 23:11:31 INFO  [com.orangehrm.tests.EmployeeListTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-12 23:11:31 INFO  [com.orangehrm.tests.EmployeeListTest] - Starting Delete Employee Test
+2026-01-12 23:11:31 INFO  [com.orangehrm.tests.EmployeeListTest] - Closing browser
+2026-01-12 23:11:31 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-12 23:11:32 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-12 23:11:32 INFO  [com.orangehrm.factory.DriverFactory] - Running Chrome in HEADLESS mode
+2026-01-12 23:11:33 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-12 23:11:33 INFO  [com.orangehrm.tests.LoginTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-12 23:11:38 INFO  [com.orangehrm.tests.LoginTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-12 23:11:38 INFO  [com.orangehrm.tests.LoginTest] - Starting valid login test
+2026-01-12 23:11:40 INFO  [com.orangehrm.tests.LoginTest] - Logged in successfully
+2026-01-12 23:11:41 INFO  [com.orangehrm.tests.LoginTest] - Valid login test passed
+2026-01-12 23:11:41 INFO  [com.orangehrm.tests.LoginTest] - Closing browser
+2026-01-12 23:11:41 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-12 23:36:13 INFO  [com.orangehrm.tests.LoginTest] - Starting valid login test
+2026-01-12 23:36:14 INFO  [com.orangehrm.tests.EmployeeListTest] - Starting Delete Employee Test
+2026-01-12 23:36:14 INFO  [com.orangehrm.tests.LoginTest] - Starting valid login test
+2026-01-13 09:25:30 INFO  [com.orangehrm.tests.LoginTest] - Starting valid login test
+2026-01-13 09:25:31 INFO  [com.orangehrm.tests.EmployeeListTest] - Starting Delete Employee Test
+2026-01-13 09:43:23 INFO  [com.orangehrm.tests.LoginTest] - Starting valid login test
+2026-01-13 09:43:23 INFO  [com.orangehrm.tests.LoginTest] - Starting valid login test
+2026-01-13 09:43:23 INFO  [com.orangehrm.tests.LoginTest] - Starting valid login test
+2026-01-13 09:43:23 INFO  [com.orangehrm.tests.EmployeeListTest] - Starting Delete Employee Test
+2026-01-13 09:43:23 INFO  [com.orangehrm.tests.EmployeeListTest] - Starting Delete Employee Test
+2026-01-13 09:43:23 INFO  [com.orangehrm.tests.EmployeeListTest] - Starting Delete Employee Test
+2026-01-13 10:25:00 INFO  [com.orangehrm.tests.LoginTest] - Starting valid login test
+2026-01-13 10:25:00 INFO  [com.orangehrm.tests.LoginTest] - Starting valid login test
+2026-01-13 10:25:00 INFO  [com.orangehrm.tests.LoginTest] - Starting valid login test
+2026-01-13 10:25:01 INFO  [com.orangehrm.tests.EmployeeListTest] - Starting Delete Employee Test
+2026-01-13 10:25:01 INFO  [com.orangehrm.tests.EmployeeListTest] - Starting Delete Employee Test
+2026-01-13 10:25:01 INFO  [com.orangehrm.tests.EmployeeListTest] - Starting Delete Employee Test
+2026-01-13 11:43:44 INFO  [com.orangehrm.tests.LoginTest] - Starting valid login test
+2026-01-13 11:43:44 INFO  [com.orangehrm.tests.LoginTest] - Starting valid login test
+2026-01-13 11:43:44 INFO  [com.orangehrm.tests.LoginTest] - Starting valid login test
+2026-01-13 11:43:45 INFO  [com.orangehrm.tests.EmployeeListTest] - Starting Delete Employee Test
+2026-01-13 11:43:45 INFO  [com.orangehrm.tests.EmployeeListTest] - Starting Delete Employee Test
+2026-01-13 11:43:45 INFO  [com.orangehrm.tests.EmployeeListTest] - Starting Delete Employee Test
+2026-01-13 11:54:42 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-13 11:54:42 INFO  [com.orangehrm.factory.DriverFactory] - Running Chrome in HEADLESS mode
+2026-01-13 11:54:46 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-13 11:54:46 INFO  [com.orangehrm.tests.DashboardTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-13 11:54:52 INFO  [com.orangehrm.tests.DashboardTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-13 11:54:56 INFO  [com.orangehrm.tests.DashboardTest] - Closing browser
+2026-01-13 11:54:56 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-13 11:54:57 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-13 11:54:57 INFO  [com.orangehrm.factory.DriverFactory] - Running Chrome in HEADLESS mode
+2026-01-13 11:54:58 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-13 11:54:58 INFO  [com.orangehrm.tests.LoginTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-13 11:55:03 INFO  [com.orangehrm.tests.LoginTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-13 11:55:03 INFO  [com.orangehrm.tests.LoginTest] - Starting valid login test
+2026-01-13 11:55:07 INFO  [com.orangehrm.tests.LoginTest] - Logged in successfully
+2026-01-13 11:55:08 INFO  [com.orangehrm.tests.LoginTest] - Valid login test passed
+2026-01-13 11:55:08 INFO  [com.orangehrm.tests.LoginTest] - Closing browser
+2026-01-13 11:55:08 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-13 11:55:09 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-13 11:55:09 INFO  [com.orangehrm.factory.DriverFactory] - Running Chrome in HEADLESS mode
+2026-01-13 11:55:11 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-13 11:55:11 INFO  [com.orangehrm.tests.AddEmployeeTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-13 11:55:16 INFO  [com.orangehrm.tests.AddEmployeeTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-13 11:55:41 INFO  [com.orangehrm.tests.AddEmployeeTest] - Closing browser
+2026-01-13 11:55:41 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-13 11:55:42 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-13 11:55:42 INFO  [com.orangehrm.factory.DriverFactory] - Running Chrome in HEADLESS mode
+2026-01-13 11:55:43 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-13 11:55:43 INFO  [com.orangehrm.tests.AddEmployeeTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-13 11:55:45 INFO  [com.orangehrm.tests.AddEmployeeTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-13 11:56:14 INFO  [com.orangehrm.tests.AddEmployeeTest] - Closing browser
+2026-01-13 11:56:14 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-13 11:56:15 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-13 11:56:15 INFO  [com.orangehrm.factory.DriverFactory] - Running Chrome in HEADLESS mode
+2026-01-13 11:56:16 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-13 11:56:16 INFO  [com.orangehrm.tests.AddEmployeeTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-13 11:56:21 INFO  [com.orangehrm.tests.AddEmployeeTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-13 11:56:46 INFO  [com.orangehrm.tests.AddEmployeeTest] - Closing browser
+2026-01-13 11:56:46 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-13 11:56:47 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-13 11:56:47 INFO  [com.orangehrm.factory.DriverFactory] - Running Chrome in HEADLESS mode
+2026-01-13 11:56:48 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-13 11:56:48 INFO  [com.orangehrm.tests.EmployeeListTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-13 11:56:54 INFO  [com.orangehrm.tests.EmployeeListTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-13 11:56:54 INFO  [com.orangehrm.tests.EmployeeListTest] - Starting Delete Employee Test
+2026-01-13 11:56:54 INFO  [com.orangehrm.tests.EmployeeListTest] - Closing browser
+2026-01-13 11:56:54 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-13 11:56:54 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-13 11:56:54 INFO  [com.orangehrm.factory.DriverFactory] - Running Chrome in HEADLESS mode
+2026-01-13 11:56:55 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-13 11:56:55 INFO  [com.orangehrm.tests.EmployeeListTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-13 11:57:00 INFO  [com.orangehrm.tests.EmployeeListTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-13 11:57:00 INFO  [com.orangehrm.tests.EmployeeListTest] - Starting Delete Employee Test
+2026-01-13 11:57:00 INFO  [com.orangehrm.tests.EmployeeListTest] - Closing browser
+2026-01-13 11:57:00 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
+2026-01-13 11:57:00 INFO  [com.orangehrm.factory.DriverFactory] - Initializing browser: chrome
+2026-01-13 11:57:00 INFO  [com.orangehrm.factory.DriverFactory] - Running Chrome in HEADLESS mode
+2026-01-13 11:57:02 INFO  [com.orangehrm.factory.DriverFactory] - Browser launched successfully
+2026-01-13 11:57:02 INFO  [com.orangehrm.tests.EmployeeListTest] - Opening URL: https://opensource-demo.orangehrmlive.com/
+2026-01-13 11:57:06 INFO  [com.orangehrm.tests.EmployeeListTest] - Browser launched and navigated to OrangeHRM login page
+2026-01-13 11:57:06 INFO  [com.orangehrm.tests.EmployeeListTest] - Starting Delete Employee Test
+2026-01-13 11:57:07 INFO  [com.orangehrm.tests.EmployeeListTest] - Closing browser
+2026-01-13 11:57:07 INFO  [com.orangehrm.factory.DriverFactory] - Closing browser
