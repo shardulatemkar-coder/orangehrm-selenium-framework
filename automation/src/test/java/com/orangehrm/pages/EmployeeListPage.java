@@ -15,13 +15,14 @@ public class EmployeeListPage  {
 	
 	private By employeeNameField = By.xpath("//label[text()='Employee Name']/../following-sibling::div//input");
 	private By searchBtn = By.xpath("//button[@type='submit']");
-	private By employeeTableRows = By.xpath("//div[contains(@class,'orangehrm-container')]/div");
+	private By employeeTableRows = By.xpath("//div[@class='oxd-table-body']//div[@role='row']");
 
 	private By deleteIcons = By.xpath("//button[i[contains(@class,'bi-trash')]]");
 	private By confirmDeleteBtn = By.xpath("//button[normalize-space()='Yes, Delete']");
 	private By successToast = By.xpath("//div[@id='oxd-toaster_1']");
 	private By empListHeader = By.xpath("//h5[text() = 'Employee Information']");
-	private By resultEmployeeName = By.xpath("//div[@role='row']//div[@role='cell'][2]");
+	private By employeeFirstName = By.xpath("//div[@class='oxd-table-body']//div[@role='row']//div[@role='cell'][3]");
+	
 	
 	public EmployeeListPage(WebDriver driver) {
 		this.driver = driver;
@@ -29,37 +30,31 @@ public class EmployeeListPage  {
 	}
 	
 	public void searchEmployee(String employeeName) {
-		actions.isDisplayed(employeeNameField);
 		actions.type(employeeNameField, employeeName);
 		actions.click(searchBtn);
-	
+		actions.isDisplayed(employeeFirstName);
 	}
 	
-	public boolean isEmployeeFound(String employeeName) {
-		List<WebElement> rows = driver.findElements(employeeTableRows);
+	public boolean isEmployeeFound(String firstName) {
 		
-		for(WebElement row : rows) {
-			if (row.getText().contains(employeeName)) {
+		List<WebElement> names = actions.getElements(employeeFirstName);
+		if(names.isEmpty()) {
+			return false;
+	        }
+		for(WebElement name : names) {
+			if(name.getText().contains(firstName)) {
 				return true;
 			}
 		}
 		return false;
 	}
+	
+	public void deleteEmpoyee(String firstName) {
 
-	public void deleteEmpoyee(String employeeName) {
-		
-		searchEmployee(employeeName);
-		
-		List<WebElement> rows = driver.findElements(employeeTableRows);
-		
-		for(WebElement row :rows) {
-			if (row.getText().contains(employeeName)) {
-				row.findElement(deleteIcons).click();
-				break;
-			}
-		}
+		actions.click(deleteIcons);
 		actions.click(confirmDeleteBtn);
 	}
+
 	
 	public boolean isDeleteSuccess() {
 		return actions.isDisplayed(successToast);
@@ -69,6 +64,6 @@ public class EmployeeListPage  {
 		return actions.isDisplayed(empListHeader);
 	}
 	public String getFirstResultName() {
-		return actions.getText(resultEmployeeName);
+		return actions.getText(employeeFirstName);
 	}
 }

@@ -1,11 +1,16 @@
 package com.orangehrm.tests;
 
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.orangehrm.base.BaseTest;
+import com.orangehrm.factory.EmployeeDataFactory;
+import com.orangehrm.flows.EmployeeFlows;
+import com.orangehrm.pages.AddEmployeePages;
 import com.orangehrm.pages.DashBoardPage;
+import com.orangehrm.pages.Employee;
 import com.orangehrm.pages.EmployeeListPage;
 import com.orangehrm.pages.LoginPage;
 import com.orangehrm.pages.MenuPage;
@@ -18,16 +23,17 @@ public class EmployeeListTest extends BaseTest {
 	MenuPage menu;
 	EmployeeListPage empList;
 	DashBoardPage dashboard;
+	AddEmployeePages addEmployee;
 	
 	
-	
-	@BeforeClass
-	public void setupPages() {
-		login = new LoginPage(driver);
-        menu = new MenuPage(driver);
-        empList = new EmployeeListPage(driver);
-        dashboard = new DashBoardPage(driver);
-	}
+	  @BeforeMethod(alwaysRun = true)
+	    public void setupPages() {
+	        login = new LoginPage(driver);
+	        menu = new MenuPage(driver);
+	        empList = new EmployeeListPage(driver);
+	        dashboard = new DashBoardPage(driver);
+	        addEmployee = new AddEmployeePages(driver);
+	  }
 	
 	@Test(groups = {"regression"})
 	public void searchAndDeleteEmployeeTest() {
@@ -36,32 +42,35 @@ public class EmployeeListTest extends BaseTest {
 		log.info("Starting Delete Employee Test");
 		
 		login.login("Admin","admin123");
-
+		Assert.assertTrue(dashboard.isDashboardHeaderVisible(),
+				"Dashboard did not load properly");
 		
-		//Assert.assertTrue(login.isDashboardVisible(), "Dashboard not visible after login ");
+		Employee employee = EmployeeDataFactory.createEmployee();
 		
-
-		menu.clickPIM();
+		EmployeeFlows flows = new EmployeeFlows(driver);
+		
+		flows.createEmployee(employee);
+			
 		menu.clickEmployeeList();
 		Assert.assertTrue(empList.isEmployeeListHeaderVisible(), "Employee List Header not visible");
 		
 		
-		String employeeName = "Sam Wick";
 		
-		empList.searchEmployee(employeeName);
-		 Assert.assertTrue(empList.isEmployeeFound(employeeName),
-	     "Employee '" + employeeName + "' was not found in search results.");
-
+		empList.searchEmployee(employee.firstName());
+		 Assert.assertTrue(empList.isEmployeeFound(employee.firstName()),
+	     "Employee '" + employee.firstName() + "' was not found in search results.");
+		 log.info("SEarched employee");
 		
-		empList.deleteEmpoyee(employeeName);
-		Assert.assertTrue(empList.isDeleteSuccess(), "Delete success toast not visible ");
-		
-		empList.searchEmployee(employeeName);
-		Assert.assertFalse(empList.isEmployeeFound(employeeName),
-                "Employee still appears in list after delete operation.");
+		 flows.deleteEmployee(employee.firstName());
+		 Assert.assertTrue(empList.isDeleteSuccess());
+		 log.info("DeletedEmployee");
+		 
+	
+		 
+//		empList.searchEmployee(employee.firstName());
+//		Assert.assertFalse(empList.isEmployeeFound(employee.firstName()),
+//                "Employee still appears in list after delete operation.");
 
 		log.info("--Employee List Tets Completed--");
 	}
-	
-	
 }

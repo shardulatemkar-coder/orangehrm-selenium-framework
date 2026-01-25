@@ -2,15 +2,15 @@
 	package com.orangehrm.utils;
 	
 	import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 	
-	import org.openqa.selenium.By;
-	import org.openqa.selenium.WebDriver;
-	import org.openqa.selenium.WebElement;
-	import org.openqa.selenium.support.ui.ExpectedConditions;
-	import org.openqa.selenium.support.ui.FluentWait;
-	import org.openqa.selenium.support.ui.WebDriverWait;
-	
-	import com.orangehrm.factory.DriverFactory;
+
 	
 	public class WaitUtils {
 	
@@ -47,13 +47,12 @@
 			wait.until(ExpectedConditions.titleContains(title));
 		}
 		
-		public WebElement flueintWait(By locator) {
+		public WebElement fluentWait(By locator) {
 			FluentWait<WebDriver> fluent = new FluentWait<>(driver)
 			.withTimeout(Duration.ofSeconds(20))
 			.pollingEvery(Duration.ofSeconds(1))
 			.ignoring(Exception.class);
 			
-			return fluent.until(dr -> dr.findElement(locator));
-		}
-	
+			return fluent.until(driver -> driver.findElement(locator));
+		}	
 	}

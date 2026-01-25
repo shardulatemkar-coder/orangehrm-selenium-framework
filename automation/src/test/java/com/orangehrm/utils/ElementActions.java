@@ -1,5 +1,7 @@
 package com.orangehrm.utils;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -19,12 +21,24 @@ public class ElementActions {
 
 	public void click(By locator) {
 		WebElement element = wait.waitForClickable(locator);
-		element.click();
-	}
+		try {
+			element.click();
+		}catch(Exception e) {
+			((JavascriptExecutor)driver)
+			.executeScript("arguments[0].click();", element);
+			}
+		}
 
 	public void click(WebElement element) {
-		wait.waitForClickable(element).click();
+	    WebElement el = wait.waitForClickable(element);
+	    try {
+	        el.click();
+	    } catch (Exception e) {
+	        ((JavascriptExecutor) driver)
+	                .executeScript("arguments[0].click();", el);
+	    }
 	}
+
 
 
 	public void type(By locator, String text) {
@@ -72,7 +86,12 @@ public class ElementActions {
 			return false;
 		}
 	}
-
+	
+	public List<WebElement> getElements(By locator){
+		wait.waitForPresence(locator);
+		return driver.findElements(locator);
+	}
+	
 	public boolean exists(By locator) {
 		try {
 			wait.waitForPresence(locator);

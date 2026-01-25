@@ -3,9 +3,11 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import com.orangehrm.base.BaseTest;
 import com.orangehrm.pages.DashBoardPage;
 import com.orangehrm.pages.LoginPage;
+import com.orangehrm.utils.JsonDataReader;
 import com.orangehrm.utils.TestDataReader;
 
 
@@ -17,19 +19,22 @@ public class LoginTest extends BaseTest {
 	@DataProvider(name = "invalidLoginData")
 	public Object[][] invalidLoginData(){
 		
-		String data = TestDataReader.get("invalid.data");
-		String[] credentials = data.split(",");
+//		String data = TestDataReader.get("invalid.data");
+//		String[] credentials = data.split(",");
+		JsonNode invalidUsers = JsonDataReader.getInvalidUsers();
 		
-		Object[][] testData = new Object[credentials.length][2];
+		Object[][] testData = new Object[invalidUsers.size()][2];
 		
-		for(int i = 0;i < credentials.length; i++) {
-			String[]userPass =credentials[i].split(":",-1);
-			testData[i][0] = userPass[0];
-			testData[i][1] = userPass[1];
+		int index = 0;
+		for(JsonNode user : invalidUsers) {
+		testData[index][0] = user.get("username").asText();	
+		testData[index][1] = user.get("password").asText();	
+		index++;
 		}
+		
 		return testData;
 	}
-	@Test(groups = {"smoke"})
+	@Test(groups = {"smoke" , "login"})
 	public void validLoginTest() {
 		  log.info("Starting valid login test");
 		  
@@ -47,7 +52,7 @@ public class LoginTest extends BaseTest {
 				
 	}
 	
-	@Test(dataProvider = "invalidLoginData" , groups = {"regression"})
+	@Test(dataProvider = "invalidLoginData" , groups = {"regression", "login"})
 	public void invalidLoginTest(String username, String password) {
 		
 		log.info("Running invalid login test with: " + username + " / " + password);
@@ -65,6 +70,7 @@ public class LoginTest extends BaseTest {
 			Assert.assertEquals(error,"Invalid credentials",
 					"Invalid credentials message not shown ");
 		}
+
 		
 
 	}

@@ -25,7 +25,11 @@ public class TestDataReader {
 	}
 	
 	public static String get(String key) {
-		return prop.getProperty(key);
+		String value = prop.getProperty(key);
+		if (value == null) {
+			throw new RuntimeException("Test data key not found: "+ key);
+		} 
+		return value;
 	}
 
 }

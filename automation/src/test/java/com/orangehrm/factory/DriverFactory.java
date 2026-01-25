@@ -34,6 +34,9 @@ public class DriverFactory {
                     log.info("Running Chrome in HEADLESS mode");
                     options.addArguments("--headless=new");
                     options.addArguments("--window-size=1920,1080");
+                }else {
+                	log.info("Running Chrome in normal Mode");
+                	options.addArguments("--start-maximized");;
                 }
                 driver = new ChromeDriver(options);
                 break;
